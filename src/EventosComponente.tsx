@@ -5,7 +5,7 @@ interface EstadoBoton {
 }
 
 class  EventosComponente extends Component<{}, EstadoBoton>{
-    state = {
+    state : EstadoBoton= {
         numero : 0
     };
 
