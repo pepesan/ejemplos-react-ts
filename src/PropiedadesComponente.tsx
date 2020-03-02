@@ -12,6 +12,9 @@ class  PropiedadesComponente extends Component<Props>{
         email: "",
         age : 0
     };
+    constructor(props: Props) {
+        super(props);
+    }
     render(): React.ReactElement{
         return (
             <div id="PropiedadesComponente">
