@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <MiComponente />
       <SuperComponente/>
-      <PropiedadesComponente name="Pepe" email="p@p.com"/>
+      <PropiedadesComponente name="Pepe" email="p@p.com" age="14"/>
     </div>
   );
 }

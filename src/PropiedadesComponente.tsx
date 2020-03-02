@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 interface Props {
     name?: string;
     email?: string;
-    age?: number;
+    age?: number | string ;
 }
 
 class  PropiedadesComponente extends Component<Props>{
