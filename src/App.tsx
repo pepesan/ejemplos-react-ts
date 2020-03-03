@@ -7,6 +7,7 @@ import PropiedadesComponente from "./PropiedadesComponente";
 import EstadoComponente from "./EstadoComponente";
 import EventosComponente from "./EventosComponente";
 import TaskComponent from "./tasks/TaskComponent";
+import FormularioBasicoComponente from "./FormularioBasicoComponente";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <EstadoComponente/>
       <EventosComponente/>
       <TaskComponent />
+      <FormularioBasicoComponente/>
     </div>
   );
 }
