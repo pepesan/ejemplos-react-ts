@@ -18,8 +18,8 @@ function App() {
       <PropiedadesComponente name="Pepe" email="p@p.com" age="14"/>
       <EstadoComponente/>
       <EventosComponente/>
-      <TaskComponent />
       <FormularioBasicoComponente/>
+      <TaskComponent />
     </div>
   );
 }

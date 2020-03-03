@@ -21,7 +21,7 @@ class  FormularioBasicoComponente extends Component<any, any>{
     render(): React.ReactElement{
         return (
             <div id="FormularioComponente">
-                <h2>Formulario Componente</h2>
+                <h2>Formulario Básico Componente</h2>
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Name:
@@ -29,6 +29,7 @@ class  FormularioBasicoComponente extends Component<any, any>{
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
+                <label>{this.state.value}</label>
             </div>
         )
     }

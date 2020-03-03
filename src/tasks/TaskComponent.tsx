@@ -18,6 +18,7 @@ class  TaskComponent extends Component<{}, State>{
     render(): React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined {
         return (
             <div id="TaskComponent">
+                <h2>Componente de tareas</h2>
                 <AddTaskForm
                     task={this.state.newTask}
                     onAdd={this.addTask}
