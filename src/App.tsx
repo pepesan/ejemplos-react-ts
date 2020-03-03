@@ -10,6 +10,7 @@ import EventosComponente from "./EventosComponente";
 function App() {
   return (
     <div className="App">
+      <img src={logo} alt="Logo de React"/>
       <MiComponente />
       <SuperComponente/>
       <PropiedadesComponente name="Pepe" email="p@p.com" age="14"/>
