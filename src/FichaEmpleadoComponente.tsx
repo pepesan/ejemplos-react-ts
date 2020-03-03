@@ -24,7 +24,7 @@ class FichaEmpleadoComponente extends Component<IEmpleado, IEmpleado>{ // defini
         return (
             <div id="FichaEmpleadoComponente">
                 <h2>FichaEmpleado Componente</h2>
-                <h3>Nombre: {this.state}</h3>
+                <h3>Nombre: {this.state.empleado.nombre}</h3>
             </div>)
     }
 }
