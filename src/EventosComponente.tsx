@@ -4,15 +4,11 @@ interface EstadoBoton {
     numero: number;
 }
 
-class  EventosComponente extends Component<{}, EstadoBoton>{
+class  EventosComponente extends Component<any, EstadoBoton>{
     state : EstadoBoton= {
         numero : 0
     };
 
-    constructor(){
-        super({});
-        console.log(this.state);
-    }
     render(): React.ReactElement{
         return (
             <div id="EventosComponente">

@@ -6,6 +6,7 @@ import SuperComponente from "./SuperComponente";
 import PropiedadesComponente from "./PropiedadesComponente";
 import EstadoComponente from "./EstadoComponente";
 import EventosComponente from "./EventosComponente";
+import TaskComponent from "./tasks/TaskComponent";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <PropiedadesComponente name="Pepe" email="p@p.com" age="14"/>
       <EstadoComponente/>
       <EventosComponente/>
+      <TaskComponent />
     </div>
   );
 }

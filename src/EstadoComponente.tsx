@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 interface MiEstado {
     healthPoints: number | undefined;
 }
-class  EstadoComponente extends Component<{}, MiEstado>{
-    constructor() {
-        super({});
+class  EstadoComponente extends Component<any, MiEstado>{
+    constructor(props: Readonly<any>) {
+        super(props);
         this.state = {
             healthPoints :10
         }
