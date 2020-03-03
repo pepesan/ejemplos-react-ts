@@ -10,10 +10,13 @@ import EventosComponente from "./EventosComponente";
 import TaskComponent from "./tasks/TaskComponent";
 import FormularioBasicoComponente from "./FormularioBasicoComponente";
 import HookEstadoComponente from "./HookEstadoComponente";
-import FormValidationComponente from "./validation/FormValidationComponente";
-import BootstrapComponente from "./validation/BootstrapComponente";
+import FormValidationComponente from "./bootstrap/FormValidationComponente";
+import BootstrapComponente from "./bootstrap/BootstrapComponente";
+import FichaEmpleadoComponente from "./FichaEmpleadoComponente";
+import {Empleado} from "./Empleado";
 
 function App() {
+  var empleado: Empleado = new Empleado();
   return (
     <div className="App">
       <img src={logo} alt="Logotipo"/>
@@ -21,6 +24,7 @@ function App() {
       <SuperComponente/>
       <PropiedadesComponente name="Pepe" email="p@p.com" age="14"/>
       <EstadoComponente/>
+      <FichaEmpleadoComponente empleado={empleado}/>
       <EventosComponente/>
       <FormularioBasicoComponente/>
       <HookEstadoComponente/>

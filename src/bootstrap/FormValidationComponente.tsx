@@ -1,5 +1,5 @@
-import { InjectedFormikProps, withFormik } from 'formik';
 import * as React from 'react';
+import { InjectedFormikProps, withFormik } from 'formik';
 import * as Yup from 'yup';
 
 interface FormValues {
@@ -10,9 +10,7 @@ interface FormProps {
     login?: string;
 }
 
-const InnerForm: React.SFC<InjectedFormikProps<FormProps, FormValues>> = (
-    props,
-) => (
+const InnerForm: React.SFC<InjectedFormikProps<FormProps, FormValues>> = (props,) => (
     <form onSubmit={props.handleSubmit}>
         <input
             id="login"
