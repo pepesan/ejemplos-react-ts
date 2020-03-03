@@ -8,6 +8,7 @@ import EstadoComponente from "./EstadoComponente";
 import EventosComponente from "./EventosComponente";
 import TaskComponent from "./tasks/TaskComponent";
 import FormularioBasicoComponente from "./FormularioBasicoComponente";
+import HookEstadoComponente from "./HookEstadoComponente";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <EventosComponente/>
       <FormularioBasicoComponente/>
       <TaskComponent />
+      <HookEstadoComponente/>
     </div>
   );
 }
