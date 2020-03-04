@@ -16,14 +16,12 @@ import FichaEmpleadoComponente from "./FichaEmpleadoComponente";
 import {Empleado} from "./Empleado";
 import AppRouter from "./rutas/AppRouter";
 import PeticionesWeb from "./peticionesweb/PeticionesWeb";
-import ClientesContenedor from "./ejercicios/clientes/ClientesContenedor";
 
 function App() {
   var empleado: Empleado = new Empleado();
   return (
     <div className="App">
-
-      <BootstrapComponente/>
+      <TaskComponent />
     </div>
   );
 }

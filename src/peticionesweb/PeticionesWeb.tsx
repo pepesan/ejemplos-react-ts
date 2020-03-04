@@ -27,10 +27,11 @@ class  PeticionesWeb extends Component{
                 <ul>
                     { this.state.persons.map((partido: Partido) =>{
                         const imgurl= "https://cursosdedesarrollo.com/pactometro/img/"+partido.imagen;
+                        const alt="Logotipo del "+ partido.nombre;
                         return (
                         <li>
                             {partido.nombre}, {partido.dipu} escaños
-                            <img src={imgurl}/>
+                            <img src={imgurl} alt={alt}/>
                         </li>)
                         }
                     )
