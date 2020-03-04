@@ -16,25 +16,15 @@ import FichaEmpleadoComponente from "./FichaEmpleadoComponente";
 import {Empleado} from "./Empleado";
 import AppRouter from "./rutas/AppRouter";
 import PeticionesWeb from "./peticionesweb/PeticionesWeb";
+import ClientesContenedor from "./ejercicios/clientes/ClientesContenedor";
 
 function App() {
   var empleado: Empleado = new Empleado();
   return (
     <div className="App">
-      <img src={logo} alt="Logotipo"/>
-      <MiComponente />
-      <SuperComponente/>
-      <PropiedadesComponente name="Pepe" email="p@p.com" age="14"/>
-      <EstadoComponente/>
-      <FichaEmpleadoComponente empleado={empleado}/>
-      <EventosComponente/>
-      <FormularioBasicoComponente/>
-      <HookEstadoComponente/>
-      <FormValidationComponente />
-      <BootstrapComponente/>
-      <AppRouter/>
+
       <TaskComponent />
-      <PeticionesWeb/>
+      <ClientesContenedor/>
     </div>
   );
 }
