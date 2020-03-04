@@ -12,6 +12,7 @@ class  EventosComponente extends Component<any, EstadoBoton>{
     constructor(props: Readonly<any>){
         super(props);
         //console.log(this.state);
+        //asociación de los métodos a atributos
         this.pulsame = this.pulsame.bind(this);
         this.increment = this.increment.bind(this);
     }
