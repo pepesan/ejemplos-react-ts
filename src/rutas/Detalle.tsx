@@ -10,7 +10,8 @@ class Detalle extends React.Component<RouteComponentProps<any>>
         return (
             <div id="Detalle">
                 <Link to="/listado">Listado</Link>
-                <button onClick={() => { this.props.history.push('/listado') }}>volver</button>
+                <button onClick={() => { this.props.history.push('/listado') }}>Ir al listado</button>
+                <button onClick={() => { this.props.history.goBack() }}>volver</button>
                 <h2>Detalle: {this.props.match.params.id}</h2>
             </div>
         )
