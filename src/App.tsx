@@ -14,6 +14,7 @@ import FormValidationComponente from "./bootstrap/FormValidationComponente";
 import BootstrapComponente from "./bootstrap/BootstrapComponente";
 import FichaEmpleadoComponente from "./FichaEmpleadoComponente";
 import {Empleado} from "./Empleado";
+import AppRouter from "./rutas/AppRouter";
 
 function App() {
   var empleado: Empleado = new Empleado();
@@ -30,6 +31,7 @@ function App() {
       <HookEstadoComponente/>
       <FormValidationComponente />
       <BootstrapComponente/>
+      <AppRouter/>
       <TaskComponent />
     </div>
   );
