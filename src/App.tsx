@@ -23,8 +23,7 @@ function App() {
   return (
     <div className="App">
 
-      <TaskComponent />
-      <ClientesContenedor/>
+      <BootstrapComponente/>
     </div>
   );
 }
