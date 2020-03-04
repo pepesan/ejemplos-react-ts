@@ -15,6 +15,7 @@ import BootstrapComponente from "./bootstrap/BootstrapComponente";
 import FichaEmpleadoComponente from "./FichaEmpleadoComponente";
 import {Empleado} from "./Empleado";
 import AppRouter from "./rutas/AppRouter";
+import PeticionesWeb from "./peticionesweb/PeticionesWeb";
 
 function App() {
   var empleado: Empleado = new Empleado();
@@ -33,6 +34,7 @@ function App() {
       <BootstrapComponente/>
       <AppRouter/>
       <TaskComponent />
+      <PeticionesWeb/>
     </div>
   );
 }
