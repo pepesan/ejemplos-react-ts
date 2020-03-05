@@ -10,7 +10,7 @@ class  MiContenedor extends Component{
             <AppContext.Provider value={ {
                 lang: 'de',
                 authenticated: true,
-                theme: 'light',
+                theme: 'light'
             } }>
                 <div id="MiContenedor">
                     <h2>Mi Contenedor</h2>
