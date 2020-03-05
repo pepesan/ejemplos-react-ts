@@ -24,7 +24,7 @@ function App() {
   var empleado: Empleado = new Empleado();
   return (
     <div className="App">
-       <AnyComponent></AnyComponent>
+       <PeticionesWeb/>
     </div>
   );
 }

@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './PeticionesWeb.css';
+import {Partido} from "./partido";
+import ShowPartido from "./ShowPartido";
 
-interface Partido {
-    nombre: string;
-    dipu: number;
-    imagen: string;
-}
+
 interface IState {
     persons: Partido [];
 }
@@ -24,19 +22,16 @@ class  PeticionesWeb extends Component{
         return (
             <div id="PeticionesWeb">
                 <button onClick={this.recarga}>Recarga</button>
-                <ul>
+                <table>
+                    <tr><th>Nombre</th><th>Diputados</th><th>Logotipo</th></tr>
                     { this.state.persons.map((partido: Partido) =>{
-                        const imgurl= "https://cursosdedesarrollo.com/pactometro/img/"+partido.imagen;
-                        const alt="Logotipo del "+ partido.nombre;
                         return (
-                        <li key={partido.nombre}>
-                            {partido.nombre}, {partido.dipu} escaños
-                            <img src={imgurl} alt={alt}/>
-                        </li>)
+                            <ShowPartido partido={partido}/>
+                            )
                         }
                     )
                     }
-                </ul>
+                </table>
             </div>
         )
     }
