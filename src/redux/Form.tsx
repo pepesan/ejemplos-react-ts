@@ -1,8 +1,6 @@
-// src/js/components/Form.jsx
 import React, {ChangeEvent, Component, EventHandler, FormEvent, FormEventHandler} from "react";
 import { connect } from "react-redux";
 import {addArticle, MisProps} from "./action";
-import {GlobalState} from "./action-types";
 import {Dispatch} from "redux";
 
 function mapDispatchToProps(dispatch: Dispatch) {

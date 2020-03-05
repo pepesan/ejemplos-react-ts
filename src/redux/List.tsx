@@ -12,9 +12,6 @@ const mapStateToProps = (state: GlobalState) => {
 
 class ConnectedList extends Component<MisProps>{
 
-  constructor(props: MisProps) {
-    super(props);
-  }
   render() {
     return (
       <ul>

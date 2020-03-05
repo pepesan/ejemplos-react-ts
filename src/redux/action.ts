@@ -1,6 +1,6 @@
-import { ADD_ARTICLE } from "./action-types";
+import {ADD_ARTICLE, MiAccion} from "./action-types";
 
-export function addArticle(payload: string) {
+export function addArticle(payload: string): MiAccion {
     return { type: ADD_ARTICLE, payload };
 }
 export interface MisProps {
