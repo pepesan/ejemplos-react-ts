@@ -21,7 +21,10 @@ class  Listado extends Component<any, MiListado>{
 
                             <Link to={{
                                 pathname: "/listado/"+item
-                            }}>{item}</Link></li>
+                            }}>
+                                {item}
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </div>

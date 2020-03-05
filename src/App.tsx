@@ -23,7 +23,7 @@ function App() {
   var empleado: Empleado = new Empleado();
   return (
     <div className="App">
-       <MiContenedor/>
+       <MiContenedor></MiContenedor>
     </div>
   );
 }

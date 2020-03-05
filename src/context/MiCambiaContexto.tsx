@@ -10,7 +10,6 @@ class  MiCambiaContexto extends Component{
                     return(
                         <div id="MiCambiaContexto">
                             <h2>MiCambiaContexto</h2>
-                            <button onClick={() =>appcontext.changeAuthenticated(appcontext.authenticated!)}>Cambia</button>
                         </div>
 
                     )

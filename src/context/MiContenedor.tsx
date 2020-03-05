@@ -4,13 +4,6 @@ import MiComponenteContextualizado from "./MiComponenteContextualizado";
 import MiCambiaContexto from "./MiCambiaContexto";
 
 class  MiContenedor extends Component{
-    setLanguage = (language: string) => {
-        this.setState({ language });
-    };
-    state = {
-        language: "en",
-        setLanguage: this.setLanguage
-    };
 
     render(): React.ReactElement{
         return (
