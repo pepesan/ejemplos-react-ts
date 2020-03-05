@@ -9,9 +9,8 @@ class  MiCambiaContexto extends Component{
                 {
                     return(
                         <div id="MiCambiaContexto">
-                            <h2>MiCambiaContexto</h2>
+                            <h2>MiCambiaContexto2</h2>
                         </div>
-
                     )
                 }
 

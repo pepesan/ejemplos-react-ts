@@ -29,7 +29,7 @@ class  PeticionesWeb extends Component{
                         const imgurl= "https://cursosdedesarrollo.com/pactometro/img/"+partido.imagen;
                         const alt="Logotipo del "+ partido.nombre;
                         return (
-                        <li>
+                        <li key={partido.nombre}>
                             {partido.nombre}, {partido.dipu} escaños
                             <img src={imgurl} alt={alt}/>
                         </li>)
@@ -45,7 +45,12 @@ class  PeticionesWeb extends Component{
         axios.get(`https://cursosdedesarrollo.com/pactometro/resultados.json`)
             .then(res => {
                 const persons: Partido[] = res.data;
+                console.log(persons);
                 this.setState({ persons });
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
             })
     }
 }

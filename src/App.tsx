@@ -18,12 +18,13 @@ import AppRouter from "./rutas/AppRouter";
 import PeticionesWeb from "./peticionesweb/PeticionesWeb";
 import ReduxAPP from "./redux/ReduxApp";
 import MiContenedor from "./context/MiContenedor";
+import AnyComponent from "./context2/AnyComponent";
 
 function App() {
   var empleado: Empleado = new Empleado();
   return (
     <div className="App">
-       <MiContenedor></MiContenedor>
+       <AnyComponent></AnyComponent>
     </div>
   );
 }
