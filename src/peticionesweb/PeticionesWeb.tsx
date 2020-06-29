@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import './PeticionesWeb.css';
+import {Partido} from "./partido";
+import ShowPartido from "./ShowPartido";
 
-interface Partido {
-    nombre: string;
-    dipu: number;
-    imagen: string;
-}
+
 interface IState {
     persons: Partido [];
 }
@@ -24,18 +22,16 @@ class  PeticionesWeb extends Component{
         return (
             <div id="PeticionesWeb">
                 <button onClick={this.recarga}>Recarga</button>
-                <ul>
+                <table>
+                    <tr><th>Nombre</th><th>Diputados</th><th>Logotipo</th></tr>
                     { this.state.persons.map((partido: Partido) =>{
-                        const imgurl= "https://cursosdedesarrollo.com/pactometro/img/"+partido.imagen;
                         return (
-                        <li>
-                            {partido.nombre}, {partido.dipu} escaños
-                            <img src={imgurl}/>
-                        </li>)
+                            <ShowPartido partido={partido}/>
+                            )
                         }
                     )
                     }
-                </ul>
+                </table>
             </div>
         )
     }
@@ -44,7 +40,12 @@ class  PeticionesWeb extends Component{
         axios.get(`https://cursosdedesarrollo.com/pactometro/resultados.json`)
             .then(res => {
                 const persons: Partido[] = res.data;
+                console.log(persons);
                 this.setState({ persons });
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
             })
     }
 }

@@ -7,7 +7,10 @@ interface State {
     newTask: Task;
     tasks: Task[];
 }
-class  TaskComponent extends Component<{}, State>{
+/*
+Componente de gestión de tareas
+ */
+class  TaskComponent extends Component<any, State>{
     state = {
         newTask: {
             id: 1,

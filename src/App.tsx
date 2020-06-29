@@ -16,14 +16,15 @@ import FichaEmpleadoComponente from "./FichaEmpleadoComponente";
 import {Empleado} from "./Empleado";
 import AppRouter from "./rutas/AppRouter";
 import PeticionesWeb from "./peticionesweb/PeticionesWeb";
-import ClientesContenedor from "./ejercicios/clientes/ClientesContenedor";
+import ReduxAPP from "./redux/ReduxApp";
+import MiContenedor from "./context/MiContenedor";
+import AnyComponent from "./context2/AnyComponent";
 
 function App() {
   var empleado: Empleado = new Empleado();
   return (
     <div className="App">
-
-      <BootstrapComponente/>
+       <PeticionesWeb/>
     </div>
   );
 }

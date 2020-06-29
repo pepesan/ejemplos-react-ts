@@ -15,14 +15,15 @@ class FormValidationComponente extends React.Component {
                 }}
                 validationSchema={Yup.object().shape({
                     firstName: Yup.string()
-                        .required('First Name is required'),
+                        .required('El nombre es obligatorio'),
                     lastName: Yup.string()
-                        .required('Last Name is required'),
+                        .required('El apelido es obligatorio'),
                     email: Yup.string()
                         .email('Email is invalid')
                         .required('Email is required'),
                     password: Yup.string()
                         .min(6, 'Password must be at least 6 characters')
+                        .max(10, 'Te has pasado de caracteres, son 20 como mucho!')
                         .required('Password is required'),
                     confirmPassword: Yup.string()
                         .oneOf([Yup.ref('password'), null], 'Passwords must match')
