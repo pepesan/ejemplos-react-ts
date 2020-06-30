@@ -16,8 +16,12 @@ class  FormularioLogin extends Component<any, LoginData>{
             <div id="FormularioLogin">
                 <h2>Formulario</h2>
                 <form>
-                    <input type="text" value={this.state.user}/>
-                    <input type="password" value={this.state.password}/>
+                    <label >Usuario</label>
+                    <input id="user_input"type="text" value={this.state.user}/><br/>
+                    <label>{this.state.user}</label><br/>
+                    <label>Password</label>
+                    <input id="password_input" type="password" value={this.state.password}/><br/>
+                    <input type="submit" value="Submit"/>
                 </form>
             </div>
         )
