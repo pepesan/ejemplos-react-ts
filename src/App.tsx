@@ -19,12 +19,13 @@ import PeticionesWeb from "./peticionesweb/PeticionesWeb";
 import ReduxAPP from "./redux/ReduxApp";
 import MiContenedor from "./context/MiContenedor";
 import AnyComponent from "./context2/AnyComponent";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   var empleado: Empleado = new Empleado();
   return (
     <div className="App">
-       <PeticionesWeb/>
+       <FormValidationComponente/>
+       <BootstrapComponente></BootstrapComponente>
     </div>
   );
 }
