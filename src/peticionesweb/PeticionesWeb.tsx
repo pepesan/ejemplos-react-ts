@@ -22,8 +22,14 @@ class  PeticionesWeb extends Component<any,IState>{
         return (
             <div id="PeticionesWeb">
                 <button onClick={this.recarga}>Recarga</button>
-                <table>
-                    <tr><th>Nombre</th><th>Diputados</th><th>Logotipo</th></tr>
+                <table className="table table-bordered">
+                    <thead className="thead-dark">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Diputados</th>
+                            <th scope="col">Logotipo</th>
+                        </tr>
+                    </thead>
                     { this.state.persons.map((partido: Partido) =>{
                         return (
                             <ShowPartido partido={partido}/>

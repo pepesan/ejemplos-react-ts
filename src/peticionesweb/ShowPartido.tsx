@@ -11,7 +11,7 @@ class  ShowPartido extends Component<IPartido>{
         const alt="Logotipo del "+ partido.nombre;
         return (
             <tr key={partido.nombre}>
-                <td>{partido.nombre}</td> <td>{partido.dipu} escaños</td>
+                <td  scope="row">{partido.nombre}</td> <td>{partido.dipu} escaños</td>
                 <td><img src={imgurl} alt={alt}/></td>
             </tr>
 
